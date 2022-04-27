@@ -1,0 +1,20 @@
+<div class="detail-section">
+  <div class="container-fluid">
+
+    <img src="{{ product.imageUrl}}" class="detail-img">
+
+    <h3>{{ product.name }}</h3>
+    <div class="price">{{product.unitPrice | currency:'RON  '}}</div>
+    <button (click)="addToCart()" class="btn btn-primary btn-sm">Cumpara </button>
+
+    <hr>
+    <h3>Descriere</h3>
+    <hr>
+    <h4>{{ product.description }}</h4>
+
+    <a routerLink="/products" class="mt-5">Inapoi</a>
+
+  </div>
+</div>
+
+
